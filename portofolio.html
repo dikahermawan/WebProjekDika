@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Landing Page</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top" style="width: 100%-1;">
+    <a class="navbar-brand" href="#">
+      <img src="img/mat1.png" class="img-thumbnail img1">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link " href="#">Home</a>
+        <a class="nav-link" href="#riwayat">Riwayat</a>
+        <a class="nav-link" href="#Keahlian">Keahlian</a>
+        <a class="nav-link" href="#porto">Portofolio</a>
+        <a class="nav-link" href="#pengunjung">Pengunjung</a>
+        <a class="nav-link" href="#organisasi">Organisasi</a>
+        <a class="nav-link Kontak" href="#kontak">Kontak</a>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg">
+        <h1>Hai,</h1>
+        <h1>Saya Dika</h1>
+        <h2 class="awal">Seorang UI Designer,</h2>
+        <h2>Frontend dan Backend Developer.</h2>
+        <a class="nav-link1 " href="#riwayat"> <button type="button" class="btn btn-primary btn-lg">Lanjut
+            Kenalan</button></a>
+        <img src="img/mat2.png" class="img-thumbnail img2">
+
+        <canvas id="myCanvas"></canvas>
+        <script src="bola.js"></script>
+      </div>
+      <div class="col-lg">
+        <img src="img/mat3.png" class="img-thumbnail img3">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row row1">
+      <div class="col-lg">
+        <img src="img/mat4.png" class="img-thumbnail img4">
+      </div>
+      <div class="col-lg">
+        <img src="img/mat2.png" class="img-thumbnail img5">
+        <h1 id="riwayat" class="judul">Riwayat Hidup Saya</h1>
+        <h4 class="desk">Nama Lengkap DIKA HERMAWAN, Lahir Banyuwangi, 14 Maret 2000, Alumni MI Darul Ulum Grogol tahun
+          2012,
+          SMP Sunan Giri 1 Grogol tahun 2015, SMKN 1 Banyuwangi tahun 2018, hingga kini berkuliah di Politeknik
+          Negeri Banyuwangi. Pengalaman pernah bekerja sebagai network enginer di CV. Lintas Media Nusantara dan
+          PT. Harita Network, Staff Gudang di PT. Elizabeth Hanjaya, dan Gardener di Bali Island School. Keahlian
+          Bidang jaringan internet perekayasaan jaringangan luas. Cita cita menjadi seorang pengusaha yang sukses.
+        </h4>
+        <img src="img/mat2.png" class="img-thumbnail img6">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1 class="Keahlian" id="Keahlian">Keahlian</h1>
+    <img src="img/mat2.png" class="img-thumbnail gamb1">
+  </div>
+  <div class="row">
+    <div class="col-sm kotak6">
+      <canvas id="Canvas1"></canvas>
+      <h3 class="kosong1">Figma</h3>
+      <div id="Progres1">
+        <div id="Bar1"></div>
+      </div>
+
+      <br>
+      <button id='klik1' onclick="update1()">Tekan Bar Skill</button>
+    </div>
+    <div class="col-sm kotak7">
+      <canvas id="Canvas2"></canvas>
+      <h3 class="kosong2">Corel Draw</h3>
+      <div id="Progres2">
+        <div id="Bar2"></div>
+      </div>
+
+      <br>
+      <button id='klik2' onclick="update2()">Tekan Bar Skill</button>
+    </div>
+    <div class="col-sm kotak7">
+      <canvas id="Canvas3"></canvas>
+      <h3 class="kosong3">Bootstrap</h3>
+      <div id="Progres3">
+        <div id="Bar3"></div>
+      </div>
+
+      <br>
+      <button id='klik3' onclick="update3()">Tekan Bar Skill</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm kotak6">
+      <canvas id="Canvas4"></canvas>
+      <h3 class="kosong4">JavaScript</h3>
+      <div id="Progres4">
+        <div id="Bar4"></div>
+      </div>
+
+      <br>
+      <button id='klik4' onclick="update4()">Tekan Bar Skill</button>
+    </div>
+    <div class="col-sm kotak7">
+      <canvas id="Canvas5"></canvas>
+      <h3 class="kosong5">Laravel</h3>
+      <div id="Progres5">
+        <div id="Bar5"></div>
+      </div>
+
+      <br>
+      <button id='klik5' onclick="update5()">Tekan Bar Skill</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm kotak7">
+      <img src="img/pro1.png" class="img-thumbnail gamb2">
+    </div>
+    <div class="col-sm kotak6">
+      <img src="img/pro2.png" class="img-thumbnail gamb3">
+    </div>
+  </div>
+  <div class="container">
+    <div class="row row2">
+      <div class="col-lg kotak1">
+        <h1 id="porto" class="judul1">Portofolio</h1>
+      </div>
+      <div class="col-lg kotak2">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row row3">
+      <div class="col-sm kotak3">
+        <img src="img/mat7.png" class="img-thumbnail img7 shadow-sm">
+        <h2 class="porto1">Wifiin Aja</h2>
+        <h3 class="ket1">
+          Merupakan Frontend website<br />
+          startup yang menyediakan<br />
+          informasi dan pemesanan<br />
+          jasa Internet Service Provider
+        </h3>
+      </div>
+      <div class="col-sm kotak4">
+        <img src="img/mat8.png" class="img-thumbnail img8 shadow-sm">
+        <h2 class="porto2">Ayo Bangkit</h2>
+        <h3 class="ket2">
+          Merupakan UI website <br />
+          e-goverment yang menye <br />
+          diakan bantuan untuk para <br />
+          pelaku UMKM di masa pandemi
+        </h3>
+      </div>
+      <div class="col-sm kotak5">
+        <img src="img/mat9.png" class="img-thumbnail img9 shadow-sm">
+        <h2 class="porto3">CIDI</h2>
+        <h3 class="ket3">
+          Merupakan UI aplikasi <br />
+          mobile yang digunakan petani <br />
+          tanaman cabai mengidentifikasi <br />
+          penyakit pada tanamanya.
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col ">
+        <h2 id="pengunjung" class=" jud"> Daftar Pengunjung Website</h2>
+      </div>
+    </div>
+    <div class="row bcg">
+      <p class="col form1">
+        <input id="nama" type="text" class="form-control" placeholder="Masukkan Nama" aria-label="Masukkan Nama">
+      </p>
+      <p class="col form2">
+        <input id="nomor" type="text" class="form-control" placeholder="Masukkan No. Identitas"
+          aria-label="Masukkan NIM">
+      </p>
+      <p class="col">
+        <button onclick="simpandata()" type="button" class="btn btn-primary submit">Daftar</button>
+      </p>
+      <p id="dataDiri"></p>
+    </div>
+    <div class="row">
+      <div class="col-sm kotak6">
+        <canvas id='Canvas6'></canvas>
+      </div>
+      <div class="col-sm kotak7">
+        <h1 class="organisasi" id="organisasi">Organisasi</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm kotak6">
+        <img src="img/remas.png" class="img-thumbnail Org1" id="org1">
+      </div>
+      <div class="col-sm kotak7">
+        <img src="img/Uks.png" class="img-thumbnail Org2"> </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm kotak6">
+        <img src="img/HMTI.jpg" class="img-thumbnail Org3">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm kotak6">
+        <canvas id='Canvas7'></canvas>
+      </div>
+      <div class="col-sm kotak7">
+        <img src="img/mat2.png" class="img-thumbnail Org4">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm kotak8">
+        <h1 id="kontak" class="contact1">Hubungi</h1>
+        <img src="img/icon1.png" class="img-thumbnail img10 " id="icon1">
+        <h3 class="nomer1">085336096804</h3>
+        <img src="img/icon2.png" class="img-thumbnail img11 " id="icon2">
+        <h3 class="nomer2">085336096804</h3>
+      </div>
+      <div class="col-sm kotak9">
+        <h1 class="contact2">Saya Di</h1>
+        <img src="img/icon3.png" class="img-thumbnail img12 " id="icon3">
+        <a class="nav-link medsos1" href="https://www.facebook.com/profile.php?id=100011177228216">
+          Dika Hermawan
+        </a>
+        <img src="img/icon4.png" class="img-thumbnail img13 " id="icon4">
+        <a class="nav-link medsos2" href="https://www.instagram.com/dikaher_/">
+          Dikaher_
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="lingkaran1.js"></script>
+  <script src="bar.js"></script>
+  <script src="lingkaran2.js"></script>
+  <script src="lingkaran3.js"></script>
+  <script src="lingkaran4.js"></script>
+  <script src="lingkaran5.js"></script>
+  <script src="rotasi.js"></script>
+  <script src="popup.js"></script>
+  <script src='mouse.js'></script>
+
+
+</body>
+
+</html>
